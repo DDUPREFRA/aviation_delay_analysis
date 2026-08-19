@@ -155,7 +155,9 @@ Additional dashboard screenshots:
 
 [`forecasting_calendar_no_defs.py`](code/forecasting_calendar_no_defs.py) uses Q3 2025 for model comparison and Q1 2026 as a single untouched final test.
 
-Before modeling, I applied the Augmented Dickey–Fuller test to the 2022–2025 daily delay-rate series. The test returned an ADF statistic of **−5.0115** and a **p-value of 0.000021**. Because the p-value was below 0.05, I rejected the unit-root null hypothesis. This supports treating the series as stationary for model development, although the test does not prove that every component of the series is stationary.
+Before modeling, I reviewed the training-series [ACF and PACF](plots/forecast_02_acf_pacf.png) to assess short-term and weekly dependence. After forecasting, I examined the forecast-error ACF and PACF to determine whether the selected model had removed that structure.
+
+I also applied the Augmented Dickey–Fuller test to the 2022–2025 daily delay-rate series. The test returned an ADF statistic of **−5.0115** and a **p-value of 0.000021**. Because the p-value was below 0.05, I rejected the unit-root null hypothesis. This supports treating the series as stationary for model development, although the test does not prove that every component of the series is stationary.
 
 | Model | Q3 2025 MAE | Q3 2025 RMSE | Q3 2025 MAPE |
 |---|---:|---:|---:|
