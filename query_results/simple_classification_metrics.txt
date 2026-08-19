@@ -1,0 +1,81 @@
+
+============================================================
+CLASSIFICATION SUMMARY
+============================================================
+
+Input file: /Users/daviddupre/Documents/PERSONAL PROJECTS PORTFOLIO/aviation_delay_analysis/processed/flights_all_cleaned.csv
+Rows used:  3,600,028
+Target:     is_delayed
+Departure delay rate: 20.6%
+
+Time-based split:
+Train:      through 2024-12-31 (2,750,935 rows)
+Validation: 2025-01-01 to 2025-12-31 (687,790 rows)
+Test:       2026-01-01 to 2026-03-31 (161,303 rows)
+
+Models compared:
+Logistic Regression, AdaBoost, Random Forest, Extra Trees, XGBoost
+
+Feature groups:
+Numeric: year, month, day_of_month, day_of_week, dep_hour, is_peak_hour, is_weekend, distance
+Categorical: op_unique_carrier, origin_state_abr, dest_state_abr, route
+
+------------------------------------------------------------
+Main results
+------------------------------------------------------------
+Selected model:      XGBoost
+Validation ROC-AUC:  67.4%
+Test ROC-AUC:        65.0%
+Test accuracy:       78.0%
+Test recall:         0.2%
+Test precision:      68.8%
+Test F1:             0.3%
+Top SHAP feature:    Dep Hour
+
+------------------------------------------------------------
+Validation model leaderboard
+------------------------------------------------------------
+ Rank               Model  Validation ROC-AUC %  Validation Accuracy %  Validation Precision %  Validation Recall %  Validation F1 %
+    1             XGBoost                  67.4                   78.4                    58.8                  1.5              2.9
+    2            AdaBoost                  65.8                   78.3                     0.0                  0.0              0.0
+    3 Logistic Regression                  65.6                   59.2                    30.0                 66.1             41.3
+    4       Random Forest                  64.4                   59.5                    29.7                 63.4             40.5
+    5         Extra Trees                  62.0                   58.0                    28.1                 60.1             38.3
+
+The model leaderboard uses 2025 validation results only.
+Q1 2026 was evaluated once using the selected model.
+
+------------------------------------------------------------
+Confusion matrix
+------------------------------------------------------------
+                          PREDICTED
+                  On Time        Delayed       Row Total
+             +-----------------------------------------------
+  ACTUAL     |
+  On Time    |     125,829           25       125,854
+  Delayed    |      35,394           55        35,449
+             +-----------------------------------------------
+  Col Total  |     161,223           80       161,303
+
+------------------------------------------------------------
+Top SHAP features - Logistic Regression
+------------------------------------------------------------
+ rank              feature  mean_abs_shap_value
+    1             Dep Hour               0.4055
+    2                 Year               0.1715
+    3 Op Unique Carrier Wn               0.0877
+    4          Day Of Week               0.0777
+    5 Op Unique Carrier Yx               0.0670
+    6 Op Unique Carrier Dl               0.0509
+    7             Distance               0.0502
+    8 Op Unique Carrier Ua               0.0490
+    9         Is Peak Hour               0.0431
+   10  Origin State Abr Co               0.0340
+
+------------------------------------------------------------
+Saved outputs
+------------------------------------------------------------
+Report: /Users/daviddupre/Documents/PERSONAL PROJECTS PORTFOLIO/aviation_delay_analysis/query_results/simple_classification_metrics.txt
+Model comparison CSV: /Users/daviddupre/Documents/PERSONAL PROJECTS PORTFOLIO/aviation_delay_analysis/query_results/classification_model_comparison.csv
+Plot folder: /Users/daviddupre/Documents/PERSONAL PROJECTS PORTFOLIO/aviation_delay_analysis/plots/classification
+SHAP values: /Users/daviddupre/Documents/PERSONAL PROJECTS PORTFOLIO/aviation_delay_analysis/plots/classification/logistic_regression_shap_summary.csv

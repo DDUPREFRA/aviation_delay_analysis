@@ -1,0 +1,24 @@
+
+============================================================
+FORECASTING SUMMARY
+============================================================
+
+ period                                   model      mae      rmse      mape
+Q3 2025                          Naive Baseline 6.927044  8.244129 41.001656
+Q3 2025                    7-Day Seasonal Naive 9.344119 10.874033 52.278165
+Q3 2025                  Recent Weekday Average 5.574677  6.906856 25.333560
+Q3 2025                      Recent 28-Day Mean 7.357750  8.780429 43.968369
+Q3 2025           Manual SARIMA(1,0,0)(1,0,0,7) 5.347183  6.682553 26.797308
+Q3 2025        Auto SARIMA(3, 0, 0)(3, 0, 0, 7) 4.819446  6.104285 25.233677
+Q3 2025 SARIMAX + holiday (3, 0, 0)(3, 0, 0, 7) 4.799701  6.073694 25.138731
+Q3 2025                      Prophet + holidays 3.244119  4.027653 14.925771
+Q1 2026                      Prophet + holidays 6.948628  8.520588 37.146555
+
+MAE and RMSE are reported in percentage points.
+MAPE is reported as a percentage.
+Q3 2025 is the model-selection period.
+Q1 2026 contains only the selected method's final test result.
+
+Metrics CSV: /Users/daviddupre/Documents/PERSONAL PROJECTS PORTFOLIO/aviation_delay_analysis/query_results/calendar_forecast_metrics_no_defs.csv
+Summary TXT: /Users/daviddupre/Documents/PERSONAL PROJECTS PORTFOLIO/aviation_delay_analysis/query_results/calendar_forecast_summary_no_defs.txt
+Residual plots folder: /Users/daviddupre/Documents/PERSONAL PROJECTS PORTFOLIO/aviation_delay_analysis/plots/forecast_residuals_no_defs

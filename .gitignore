@@ -1,0 +1,22 @@
+# Local operating-system and editor files
+.DS_Store
+.Rhistory
+.env
+.env.*
+!.env.example
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.matplotlib_cache/
+.venv/
+venv/
+
+# Large source and generated analytical datasets
+raw_data/
+processed/
+archive/
+
+# Tableau recovery and temporary files
+*.twbr
+.~*

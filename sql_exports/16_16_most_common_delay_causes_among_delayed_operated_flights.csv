@@ -1,0 +1,7 @@
+main_delay_cause,delayed_flights,pct_of_delayed_flights
+late_aircraft_delay,2696189,38.24
+carrier_delay,2052982,29.11
+no_reported_cause,1393459,19.76
+nas_delay,640862,9.09
+weather_delay,251897,3.57
+security_delay,16205,0.23

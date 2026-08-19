@@ -1,0 +1,2 @@
+"total_flights","total_delayed","overall_delay_rate","avg_arr_delay","avg_dep_delay","avg_time_recovered","avg_arr_delay_when_delayed","avg_dep_delay_when_delayed","max_arr_delay","max_dep_delay","total_airports","total_airlines","total_routes","most_delayed_airline","least_delayed_airline","most_delayed_airport","least_delayed_airport"
+"36000275","7488117","20.80","6.93","12.38","-5.44","70.27","66.14","4405","4413","385","18","8537","JetBlue Airways","Delta Air Lines","Miami, FL","Salt Lake City, UT"

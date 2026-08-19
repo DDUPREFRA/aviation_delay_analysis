@@ -1,0 +1,15 @@
+airline_name,delayed_flights,avg_arr_delay_when_delayed,median_arr_delay_when_delayed,p90_arr_delay_when_delayed
+SkyWest Airlines,625923,84.46,48.00,178.00
+JetBlue Airways,361485,75.62,48.00,170.00
+Republic Airways,227003,72.80,48.00,157.00
+Endeavor Air,129840,78.24,47.00,166.00
+PSA Airlines,221979,80.45,47.00,173.00
+Frontier Airlines,245207,73.83,45.00,156.00
+Allegiant Air,135986,79.55,44.00,164.00
+American Airlines,1057595,78.04,43.00,162.00
+United Airlines,676529,70.05,42.00,160.00
+Envoy Air,233982,64.32,41.00,137.00
+Spirit Airlines,271931,65.83,41.00,149.00
+Delta Air Lines,820278,65.56,36.00,148.00
+Alaska Airlines,222591,49.21,33.00,111.00
+Southwest Airlines,1654942,44.26,28.00,102.00

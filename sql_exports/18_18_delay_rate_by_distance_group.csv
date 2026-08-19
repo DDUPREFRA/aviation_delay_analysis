@@ -1,0 +1,5 @@
+distance_group,total_operated_flights,delayed_flights,delay_rate_pct
+1. Short (<500 mi),12096988,2265418,18.73
+2. Medium (500-999 mi),12434780,2613784,21.02
+3. Long (1000-1999 mi),7731894,1737347,22.47
+4. Very Long (2000+ mi),2124739,435045,20.48

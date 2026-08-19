@@ -1,0 +1,5 @@
+distance_group,delayed_flights,avg_dep_delay,median_dep_delay,p90_dep_delay,avg_arr_delay,median_arr_delay,p90_arr_delay
+1. Short (<500 mi),2265418,71.06,42.00,146.00,67.89,40.00,147.00
+2. Medium (500-999 mi),2613784,70.74,42.00,146.00,66.70,39.00,147.00
+3. Long (1000-1999 mi),1737347,69.79,41.00,144.00,64.06,37.00,143.00
+4. Very Long (2000+ mi),435045,70.85,39.00,144.00,61.80,33.00,140.00
