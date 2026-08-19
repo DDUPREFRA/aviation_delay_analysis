@@ -239,6 +239,10 @@ The forecasting and classification experiments both show the risk of relying on 
 - SHAP-based model interpretation
 - Business interpretation and communication of analytical limitations
 
+## Development Note
+
+The forecasting and classification code was developed with substantial generative-AI assistance. I defined the analytical questions and data scope, executed and reviewed the workflows, validated the saved results, and interpreted the model performance and limitations. These components represent applied model evaluation and guided learning rather than independent machine-learning engineering.
+
 ## Repository structure
 
 ```text

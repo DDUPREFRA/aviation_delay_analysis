@@ -20,3 +20,6 @@ archive/
 # Tableau recovery and temporary files
 *.twbr
 .~*
+
+# Local social-media upload copies
+linkedin_assets/
