@@ -170,6 +170,10 @@ After selection, Prophet was retrained through December 2025 and evaluated on Q1
 
 ![Q1 2026 forecast versus actual](<plots/forecast_residuals_no_defs/Q1 2026 - Prophet + holidays - forecast vs actual.png>)
 
+![Q1 2026 forecast-error ACF and PACF](<plots/forecast_residuals_no_defs/Q1 2026 - forecast error ACF PACF.png>)
+
+The forecast-error ACF and PACF support the residual diagnostics above: short-run dependence remained after forecasting, so the model did not fully capture the daily time-series structure.
+
 ### 5. Delay classification
 
 [`classification_simple.py`](code/classification_simple.py) compares five classifiers on a reproducible 10% sample of 3.6 million flights. Training uses data through 2024, validation uses 2025, and Q1 2026 is held out for final testing.
