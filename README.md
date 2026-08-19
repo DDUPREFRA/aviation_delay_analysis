@@ -15,9 +15,11 @@ I built an end-to-end workflow in Python, PostgreSQL, SQL, and Tableau, then eva
 - Prophet produced the best validation forecast, but its MAE rose from **3.24 percentage points** in Q3 2025 to **6.95 points** in the untouched Q1 2026 test.
 - XGBoost achieved the highest classification validation ROC-AUC at **67.4%**, but Logistic Regression provided the most useful default-threshold balance, with **66.1% validation recall** and a **41.3% F1 score**.
 
-![Departure-delay overview](plots/delay_overview.png)
+![U.S. Flight Departure Delay Overview Tableau dashboard](plots/tableau_dashboards/01_executive_overview.png)
 
-The overview shows that approximately one in five operated flights departed at least 15 minutes late and places that rate beside annual flight volume.
+The executive dashboard shows that approximately one in five operated flights departed at least 15 minutes late and places that rate beside annual flight volume.
+
+[Explore the interactive Executive Overview on Tableau Public](https://public.tableau.com/app/profile/david.dupre7494/viz/U_S_FlightDepartureDelayOverview/Dashboard1U_S_FlightDepartureDelayAnalysis)
 
 ## Business Problem and Analytical Questions
 
@@ -122,15 +124,32 @@ Extreme delays were retained because they are part of the operational phenomenon
 
 The Tableau analysis contains seven dashboards:
 
-1. Executive Overview
-2. Seasonal Departure Delay Patterns
-3. Hourly and Operating Departure Delay Patterns
-4. Airline Performance
-5. Airline Delay Severity
-6. Airports and Routes
-7. Delay Causes and Severity
+1. [Executive Overview](https://public.tableau.com/app/profile/david.dupre7494/viz/U_S_FlightDepartureDelayOverview/Dashboard1U_S_FlightDepartureDelayAnalysis)
+2. [Seasonal Departure Delay Patterns](https://public.tableau.com/app/profile/david.dupre7494/viz/SeasonalDepartureDelayPatterns/Dashboard2SeasonalDepartureDelayPatterns)
+3. [Hourly and Operating Departure Delay Patterns](https://public.tableau.com/app/profile/david.dupre7494/viz/HourlyandOperatingDepartureDelayPatterns/Dashboard3HourlyandOperatingDepartureDelayPatterns)
+4. [Airline Performance](https://public.tableau.com/app/profile/david.dupre7494/viz/AirlineDelayPerformance_17869876261480/Dashboard4AirlinePerformance)
+5. [Airline Delay Severity](https://public.tableau.com/app/profile/david.dupre7494/viz/AirlineDelaySeverity/Dashboard5AirlineDelaySeverity)
+6. [Airports and Routes](https://public.tableau.com/app/profile/david.dupre7494/viz/AirportandRoutePerformance/Dashboard6AirportsandRoutes)
+7. [Delay Causes and Severity](https://public.tableau.com/app/profile/david.dupre7494/viz/DelayCausesandDistancePatterns/Dashboard7DelayCausesandSeverity)
 
 The latest workbook is [`Recovered_Aviation_Dashboards_2026-08-07.twb`](plots/Recovered_Aviation_Dashboards_2026-08-07.twb). See the [`Tableau dashboard build guide`](TABLEAU_DASHBOARD_BUILD_GUIDE.md) for worksheet definitions and assembly notes.
+
+#### Dashboard showcase
+
+![Seasonal Departure Delay Patterns dashboard](plots/tableau_dashboards/02_seasonal_patterns.png)
+
+The seasonal dashboard compares monthly, quarterly, and weekday patterns while keeping operated-flight volume visible beside delay rate.
+
+![Airport and Route Performance dashboard](plots/tableau_dashboards/06_airports_routes.png)
+
+The airport and route dashboard separates delay likelihood from delayed-flight volume and applies minimum-volume thresholds to reduce unstable comparisons.
+
+Additional dashboard screenshots:
+
+- [Hourly and operating patterns](plots/tableau_dashboards/03_hourly_operating_patterns.png)
+- [Airline performance](plots/tableau_dashboards/04_airline_performance.png)
+- [Airline delay severity](plots/tableau_dashboards/05_airline_severity.png)
+- [Delay causes and distance patterns](plots/tableau_dashboards/07_delay_causes_distance.png)
 
 ### 4. Daily delay-rate forecasting
 
