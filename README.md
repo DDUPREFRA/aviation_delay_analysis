@@ -241,7 +241,7 @@ The forecasting and classification experiments both show the risk of relying on 
 
 ## Development Note
 
-Generative AI provided substantial assistance with implementing the forecasting and classification workflows and with structuring and editing project documentation, including this README. I defined the analytical questions and data scope, executed and reviewed the workflows, validated the saved results, selected the material presented, and interpreted the findings and limitations. The modeling components represent applied model evaluation and guided learning rather than independent machine-learning engineering. I reviewed the final documentation and take responsibility for its accuracy.
+I completed the SQL analysis and Tableau dashboard development directly. Generative AI provided substantial assistance with implementing the forecasting and classification workflows and with structuring and editing project documentation, including this README. I defined the analytical questions and data scope, executed and reviewed the workflows, validated the saved results, selected the material presented, and interpreted the findings and limitations. The modeling components represent applied model evaluation and guided learning rather than independent machine-learning engineering. I reviewed the final documentation and take responsibility for its accuracy.
 
 ## Repository structure
 
